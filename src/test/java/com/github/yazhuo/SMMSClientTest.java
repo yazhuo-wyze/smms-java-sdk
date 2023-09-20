@@ -19,10 +19,6 @@ public class SMMSClientTest {
     @Before
     public void init() {
         this.smmsClient = new SMMSClient(System.getenv("SMMS_API_TOKEN"));
-
-        final ImageItem imageItem = this.smmsClient.upload(FileUtil.file("lina.jpg"));
-        final String url = imageItem.getUrl();
-        final String hash = imageItem.getHash();
     }
 
     @Test
