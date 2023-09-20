@@ -6,7 +6,7 @@ on:
 
 jobs:
 
-  maven-test:
+  job:
     runs-on: ubuntu-latest
     steps:
       # checkout
@@ -17,12 +17,6 @@ jobs:
         uses: stCarolas/setup-maven@v4.5
         with:
           maven-version: 3.8.2
-      - name: Print environment with masked secrets
-        env:
-          SMMS_API_TOKEN: ${{ secrets.SMMS_API_TOKEN }}
-          SMMS_USERNAME: ${{ secrets.SMMS_USERNAME }}
-          SMMS_PASSWORD: ${{ secrets.SMMS_PASSWORD }}
-        run: printenv
       # maven test
       - name: Maven test
         env:
