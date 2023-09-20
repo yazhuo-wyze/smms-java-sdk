@@ -1,0 +1,28 @@
+name: test build deploy
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+
+  maven-test:
+    runs-on: ubuntu-latest
+    steps:
+      # checkout
+      - name: Checkout
+        uses: actions/checkout@v3
+      # maven config
+      - name: Set up Maven
+        uses: stCarolas/setup-maven@v4.5
+        with:
+          maven-version: 3.8.2
+      # Import Secrets
+      - name: Import Secrets
+        uses: hashicorp/vault-action@v2
+        with:
+          exportEnv: true
+      # maven test
+      - name: Maven test
+        run: |
+          mvn test
