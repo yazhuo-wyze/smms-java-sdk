@@ -17,15 +17,17 @@ jobs:
         uses: stCarolas/setup-maven@v4.5
         with:
           maven-version: 3.8.2
-      # Import Secrets
-      - uses: secrethub/actions/env-export@v0.2.1
+      - name: Print environment with masked secrets
         env:
           SMMS_API_TOKEN: ${{ secrets.SMMS_API_TOKEN }}
           SMMS_USERNAME: ${{ secrets.SMMS_USERNAME }}
           SMMS_PASSWORD: ${{ secrets.SMMS_PASSWORD }}
-      - name: Print environment with masked secrets
         run: printenv
       # maven test
       - name: Maven test
+        env:
+          SMMS_API_TOKEN: ${{ secrets.SMMS_API_TOKEN }}
+          SMMS_USERNAME: ${{ secrets.SMMS_USERNAME }}
+          SMMS_PASSWORD: ${{ secrets.SMMS_PASSWORD }}
         run: |
           mvn test
