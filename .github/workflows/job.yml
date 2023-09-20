@@ -23,6 +23,8 @@ jobs:
           SMMS_API_TOKEN: ${{ secrets.SMMS_API_TOKEN }}
           SMMS_USERNAME: ${{ secrets.SMMS_USERNAME }}
           SMMS_PASSWORD: ${{ secrets.SMMS_PASSWORD }}
+      - name: Print environment with masked secrets
+        run: printenv
       # maven test
       - name: Maven test
         run: |
