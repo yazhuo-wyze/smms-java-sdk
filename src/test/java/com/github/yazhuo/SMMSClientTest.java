@@ -18,6 +18,7 @@ public class SMMSClientTest {
 
     @Before
     public void init() {
+        final SMMSClient smmsClient = new SMMSClient("SMMS_API_TOKEN");
         this.smmsClient = new SMMSClient(System.getenv("SMMS_API_TOKEN"));
     }
 

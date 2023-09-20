@@ -22,3 +22,14 @@
 ```shell
 mvn install
 ```
+
+### code used
+
+```java
+
+final SMMSClient smmsClient=new SMMSClient("SMMS_API_TOKEN");
+        or
+final SMMSClient smmsClient=new SMMSClient("USERNAME","PASSWORD");
+
+
+```
