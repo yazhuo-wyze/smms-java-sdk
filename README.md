@@ -11,7 +11,7 @@
 ```xml
 
 <dependency>
-    <groupId>com.github.yazhuo-hihi</groupId>
+    <groupId>io.github.yazhuo-wyze</groupId>
     <artifactId>smms-java-sdk</artifactId>
     <version>1.0.1</version>
 </dependency>
