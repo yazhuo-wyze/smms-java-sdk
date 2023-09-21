@@ -23,6 +23,21 @@
         </license>
     </licenses>
 
+    <developers>
+        <developer>
+            <name>yazhuo</name>
+            <email>dongyazhuo@hotmail.com</email>
+            <organization>yazhuo</organization>
+            <organizationUrl>https://github.com/yazhuo-wyze</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:yazhuo-wyze/smms-java-sdk.git</connection>
+        <developerConnection>scm:git@github.com:yazhuo-wyze/smms-java-sdk.git</developerConnection>
+        <url>https://github.com/yazhuo-wyze/smms-java-sdk/tree/main</url>
+    </scm>
+
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
