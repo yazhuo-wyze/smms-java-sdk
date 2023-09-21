@@ -8,6 +8,22 @@
     <artifactId>smms-java-sdk</artifactId>
     <version>1.0.1</version>
 
+    <name>smms-java-sdk</name>
+    <description>
+        Add a java sdk for use https://sm.ms
+        Api doc : https://doc.sm.ms/
+        This is a blueprint website, and we have encapsulated a user-friendly Java SDK.
+    </description>
+    <url>https://doc.sm.ms/</url>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
