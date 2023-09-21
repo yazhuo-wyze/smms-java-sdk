@@ -29,8 +29,12 @@ jobs:
           java-version: '8'
           distribution: 'temurin'
       - name: Publish to the Maven Central Repository
+
         run: mvn --batch-mode deploy
         env:
           MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
           MAVEN_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
+          SMMS_API_TOKEN: ${{ secrets.SMMS_API_TOKEN }}
+          SMMS_USERNAME: ${{ secrets.SMMS_USERNAME }}
+          SMMS_PASSWORD: ${{ secrets.SMMS_PASSWORD }}
 
