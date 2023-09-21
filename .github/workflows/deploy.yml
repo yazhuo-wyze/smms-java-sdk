@@ -23,6 +23,11 @@ jobs:
           SMMS_PASSWORD: ${{ secrets.SMMS_PASSWORD }}
         run: mvn --batch-mode deploy
 
+
+      - uses: actions/setup-java@v2
+        with:
+          java-version: '8'
+          distribution: 'temurin'
       - name: Publish to the Maven Central Repository
         run: mvn --batch-mode deploy
         env:
