@@ -15,20 +15,6 @@ jobs:
         with:
           java-version: '8'
           distribution: 'temurin'
-
-      - name: Publish package to GitHub Packages
-        env:
-          GITHUB_TOKEN: ${{ secrets.PACKAGE_TOKEN }}
-          SMMS_API_TOKEN: ${{ secrets.SMMS_API_TOKEN }}
-          SMMS_USERNAME: ${{ secrets.SMMS_USERNAME }}
-          SMMS_PASSWORD: ${{ secrets.SMMS_PASSWORD }}
-        run: mvn --batch-mode deploy
-
-
-      - uses: actions/setup-java@v2
-        with:
-          java-version: '8'
-          distribution: 'temurin'
       - name: Publish to the Maven Central Repository
 
         run: mvn --batch-mode deploy

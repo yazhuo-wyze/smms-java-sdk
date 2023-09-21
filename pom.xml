@@ -6,7 +6,7 @@
 
     <groupId>io.github.yazhuo-wyze</groupId>
     <artifactId>smms-java-sdk</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
 
     <name>smms-java-sdk</name>
     <description>
@@ -45,13 +45,14 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+
     <distributionManagement>
         <repository>
-            <id>github</id>
-            <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/yazhuo-wyze/smms-java-sdk</url>
+            <id>maven</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/releases/</url>
         </repository>
     </distributionManagement>
+
 
     <dependencies>
         <dependency>
