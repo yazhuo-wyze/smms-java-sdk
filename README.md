@@ -26,16 +26,21 @@ mvn install
 ### code used
 
 ```java
-
+// new client
 final SMMSClient smmsClient = new SMMSClient("SMMS_API_TOKEN");
-or 
+//or 
 final SMMSClient smmsClient = new SMMSClient("USERNAME","PASSWORD");
 
+// get user profile
+final ResponseUserProfile profile=this.smmsClient.profile();
 
 // pic upload
 final ImageItem imageItem = smmsClient.upload(FileUtil.file("lina.jpg"));
 final String url = imageItem.getUrl();
 final String hash = imageItem.getHash();
+
+// list current user upload history
+final List<ImageItem> imageItems=this.smmsClient.uploadHistory();
 
 // pic delete 
 final Boolean delete = this.smmsClient.delete(imageItem.getHash());

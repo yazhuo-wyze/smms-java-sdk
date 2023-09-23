@@ -6,7 +6,7 @@
 
     <groupId>io.github.yazhuo-wyze</groupId>
     <artifactId>smms-java-sdk</artifactId>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
 
     <name>smms-java-sdk</name>
     <description>

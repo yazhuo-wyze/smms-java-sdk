@@ -73,6 +73,7 @@ public class SMMSClient {
      *
      * @return clear
      */
+    @Deprecated
     public Boolean clear() {
         final APIEnum apiEnum = APIEnum.CLEAR;
         final HttpRequest request = HttpUtil.createRequest(Method.valueOf(apiEnum.method), Constants.BASIC_URl + apiEnum.uri);
@@ -91,6 +92,7 @@ public class SMMSClient {
      *
      * @return history
      */
+    @Deprecated
     public List<ImageItem> history() {
         final APIEnum apiEnum = APIEnum.HISTORY;
         final HttpRequest request = HttpUtil.createRequest(Method.valueOf(apiEnum.method), Constants.BASIC_URl + apiEnum.uri);
