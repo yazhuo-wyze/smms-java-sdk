@@ -4,7 +4,7 @@
 
 #### this code repo is https://doc.sm.ms java sdk achieve.
 
-### used
+### How to used
 
 #### Install 1/2: Add this to pom.xml:
 
@@ -13,7 +13,7 @@
 <dependency>
   <groupId>io.github.yazhuo-wyze</groupId>
   <artifactId>smms-java-sdk</artifactId>
-  <version>1.0.6</version>
+    <version>1.0.7</version>
 </dependency>
 ```
 
@@ -23,7 +23,7 @@
 mvn install
 ```
 
-### code used
+### How to code used
 
 ```java
 // new client
