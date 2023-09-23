@@ -13,7 +13,7 @@
 <dependency>
   <groupId>io.github.yazhuo-wyze</groupId>
   <artifactId>smms-java-sdk</artifactId>
-    <version>1.0.8</version>
+    <version>1.0.9</version>
 </dependency>
 ```
 
