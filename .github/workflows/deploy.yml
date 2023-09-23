@@ -26,15 +26,3 @@ jobs:
           SMMS_API_TOKEN: ${{ secrets.SMMS_API_TOKEN }}
           SMMS_USERNAME: ${{ secrets.SMMS_USERNAME }}
           SMMS_PASSWORD: ${{ secrets.SMMS_PASSWORD }}
-      - name: Set up Java for publishing to GitHub Packages
-        uses: actions/setup-java@v3
-        with:
-          java-version: '8'
-          distribution: 'temurin'
-      - name: Publish to GitHub Packages
-        run: mvn --batch-mode deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SMMS_API_TOKEN: ${{ secrets.SMMS_API_TOKEN }}
-          SMMS_USERNAME: ${{ secrets.SMMS_USERNAME }}
-          SMMS_PASSWORD: ${{ secrets.SMMS_PASSWORD }}
